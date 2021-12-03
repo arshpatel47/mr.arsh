@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    
+<dIV
+     < div class="container">
+    
+
+    <div class="video-links-container">
+        <H1>Unit-1</H1>
+        <a href="images/Unit-1Tracks to Taj Nagar (Std 10) English (Eng-Guj).mp4" class="video-links">Unit-1Tracks to Taj Nagar (Std 10) English (Eng-Guj)</a>
+        <a href="images/video-2.mp4" class="video-links">Unit-1 Palakkad public library (Std 10) English (Eng-Guj)</a>
+        <a href="images/video-3.mp4" class="video-links">Unit-1 Sitapur's Light (Std 10) English (Eng-Guj)</a>
+        <H1>Unit-2</H1>
+        <a href="" class="video-links">Unit-2 (The Human Robot-1) Std10 English</a>
+        <a href="" class="video-links">Unit-2 (The Human Robot-2) Std10 English</a>
+        <a href="" class="video-links">Unit-2 (The Human Robot-3) Std10 English</a>
+        <a href="" class="video-links">Unit-2 (The Human Robot-4) Std10 English</a>
+        <a href="" class="video-links">Unit-2 (The Human Robot-5) Std10 English</a>
+        <H1>Unit-4</H1>
+        <a href="" class="video-links">Unit-4 (A Wonderful Creation) Std-10 English</a>
+        
+        
+    </div>
+    
+
+    <div class="video-container">
+        
+        <video src="images/videoplayback.mp4" loop muted controls class="video"></video>
+    </div>
+
+</div>
+
+<script>
+
+document.querySelectorAll('.video-links').forEach(links =>{
+    links.addEventListener('click', (e) =>{
+        e.preventDefault();
+        var src = links.getAttribute('href');
+        document.querySelector('.video').src = src;
+        document.querySelector('.video').play();
+    });
+});
+
+</script>
+
+</body>
+
+</html>
